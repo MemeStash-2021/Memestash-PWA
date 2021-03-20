@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/firebase,phpstorm+all
-# Edit at https://www.toptal.com/developers/gitignore?templates=firebase,phpstorm+all
+# Created by https://www.toptal.com/developers/gitignore/api/phpstorm+all,vscode,firebase
+# Edit at https://www.toptal.com/developers/gitignore?templates=phpstorm+all,vscode,firebase
 
 ### Firebase ###
 .idea
@@ -100,4 +100,12 @@ modules.xml
 # Sonarlint plugin
 .idea/sonarlint
 
-# End of https://www.toptal.com/developers/gitignore/api/firebase,phpstorm+all
+### vscode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# End of https://www.toptal.com/developers/gitignore/api/phpstorm+all,vscode,firebase
