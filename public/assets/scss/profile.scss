@@ -1,0 +1,27 @@
+@use 'modules/base';
+@use 'resources/commons';
+
+main{
+  .user{
+    margin-top: 1rem;
+    @include commons.figureHorizontal();
+    justify-content: space-around;
+    img{
+      width: 7rem ;
+      height: 7rem;
+      border: commons.$leaf solid 0.20vw;
+      border-radius: 1vw;
+    }
+    figcaption{
+      @include commons.figcapListing();
+    }
+  }
+  h1{
+    @include commons.subStyle(1.5rem)
+  }
+  article{
+    div{
+      @include commons.cardListing()
+    }
+  }
+}
