@@ -147,3 +147,9 @@ nav{
     margin: 1vw;
   }
 }
+
+@mixin subStyle($font-size){
+  text-align: center;
+  margin: 0.5rem;
+  font-size: $font-size;
+}

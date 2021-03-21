@@ -1,9 +1,7 @@
 @use 'base';
 
-h1{
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+h2{
+  @include base.subStyle(1.5rem)
 }
 
 main{
