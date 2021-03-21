@@ -1,2 +1,21 @@
 @use 'base';
 
+main{
+  .profile-short{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    img{
+      width: 12vw;
+      border: base.$leaf solid 0.20rem;
+      border-radius: 10px;
+    }
+    figcaption{
+      height: 12vw;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+    }
+    margin-bottom: 2rem;
+  }
+}

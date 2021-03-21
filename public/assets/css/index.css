@@ -54,4 +54,22 @@ nav a:hover {
   margin: 1rem;
 }
 
+main .profile-short {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+main .profile-short img {
+  width: 12vw;
+  border: #388525 solid 0.2rem;
+  border-radius: 10px;
+}
+main .profile-short figcaption {
+  height: 12vw;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+
 /*# sourceMappingURL=index.css.map */
