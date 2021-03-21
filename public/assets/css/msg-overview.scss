@@ -5,22 +5,16 @@ h2{
 }
 
 main{
-  display: flex;
-  flex-flow: column nowrap;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  @include base.columnListing(2rem);
   figure{
     margin-bottom: 1rem;
-    display: flex;
-    flex-flow: row wrap;
+    @include base.figureHorizontal();
     img{
-      @include base.pfStyle()
+      @include base.pfStyle(10vw)
     }
     figcaption{
       margin-left: 2rem;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: space-evenly;
+      @include base.figcapListing();
       h3{
         font-size: 1.25rem;
       }

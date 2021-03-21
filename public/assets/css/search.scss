@@ -38,17 +38,14 @@ main{
   margin-left: 2rem;
   margin-right: 2rem;
   figure{
-    display: flex;
-    flex-flow: row nowrap;
+    @include base.figureHorizontal();
     align-content: center;
     img{
-      @include base.pfStyle();
+      @include base.pfStyle(10vw);
       margin-right: 2rem;
     }
     figcaption{
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: space-evenly;
+      @include base.figcapListing();
       h3{
         font-size: 1.25rem;
       }

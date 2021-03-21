@@ -141,10 +141,11 @@ main {
 main figure {
   margin-bottom: 1rem;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
 }
 main figure img {
   height: 10vw;
+  width: 10vw;
   border: #388525 solid 0.2rem;
   border-radius: 10px;
 }

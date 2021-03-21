@@ -142,7 +142,7 @@ main .profile-short figcaption {
   height: 7rem;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 main .profile-short figcaption #nameplate em {
   display: block;

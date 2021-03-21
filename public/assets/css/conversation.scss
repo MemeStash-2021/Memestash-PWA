@@ -1,0 +1,23 @@
+@use 'base';
+
+main{
+  @include base.columnListing(2rem);
+  .message{
+    @include base.figureHorizontal();
+    img{
+      @include base.pfStyle(5rem)
+    }
+    figcaption{
+      @include base.figcapListing();
+      margin-left: 0.5rem;
+      h3{
+        font-size: 1.5rem;
+      }
+      p{
+        @include base.pfStyle(auto);
+        padding: 0.25rem;
+      }
+    }
+    margin-bottom: 0.5rem;
+  }
+}

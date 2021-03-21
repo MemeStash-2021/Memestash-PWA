@@ -2,8 +2,7 @@
 
 main{
   .profile-short{
-    display: flex;
-    flex-flow: row nowrap;
+    @include base.figureHorizontal;
     justify-content: space-around;
     img{
       width: 7rem ;
@@ -13,9 +12,7 @@ main{
     }
     figcaption{
       height: 7rem;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: space-around;
+      @include base.figcapListing();
       #nameplate{
         em{
           display: block;

@@ -175,6 +175,7 @@ main figure {
 }
 main figure img {
   height: 10vw;
+  width: 10vw;
   border: #388525 solid 0.2rem;
   border-radius: 10px;
   margin-right: 2rem;

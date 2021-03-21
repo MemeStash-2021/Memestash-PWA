@@ -27,10 +27,29 @@ $flare: #F53333;
   font-size: $font-size;
 }
 
-@mixin pfStyle() {
-  height: 10vw;
+@mixin pfStyle($dimension) {
+  height: $dimension;
+  width: $dimension;
   border: $leaf solid 0.20rem;
   border-radius: 10px;
+}
+
+@mixin columnListing($margin){
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: $margin;
+  margin-right: $margin;
+}
+
+@mixin figcapListing(){
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+}
+
+@mixin figureHorizontal(){
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 body {
