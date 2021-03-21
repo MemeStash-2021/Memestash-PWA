@@ -23,12 +23,13 @@ nav {
   flex-flow: row wrap;
   justify-content: space-around;
   border-top: #71DB77 solid 3px;
+  border-bottom: 1rem;
   margin-bottom: 1vw;
 }
 nav a {
   padding: 0.5vw;
   margin: 0.25vw;
-  font-size: 1.5vw;
+  font-size: 1rem;
 }
 nav a em {
   margin-right: 0.5vw;
@@ -51,10 +52,10 @@ nav a:hover {
   background-color: black;
   padding: 0.3vw;
   border-radius: 1vw;
-  width: 10.5vw;
+  width: max-content;
 }
 .card img {
-  height: 10vw;
+  height: 10rem;
   border-radius: 1vw 1vw 0 0;
   border: #388525 solid 0.2vw;
 }
@@ -65,8 +66,7 @@ nav a:hover {
 }
 .card figcaption p {
   display: inline;
-  margin-bottom: 0.25vw;
-  font-size: 1.25vw;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 600px) {

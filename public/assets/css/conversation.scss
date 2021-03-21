@@ -30,18 +30,11 @@ main {
 }
 
 footer {
-  border-top: base.$oozora solid 3px;
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  background-color: base.$mat_black;
+  @include base.footerStyle();
 
   form {
     display: flex;
+    //TODO: Change flow direction based on user
     flex-flow: row wrap;
     justify-content: space-evenly;
 
@@ -63,9 +56,5 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  header {
-    nav {
-      display: none;
-    }
-  }
+  @include base.hideNav()
 }

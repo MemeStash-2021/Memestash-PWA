@@ -52,6 +52,26 @@ $flare: #F53333;
   flex-flow: row nowrap;
 }
 
+@mixin footerStyle(){
+  border-top: $oozora solid 3px;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  background-color: $mat_black;
+}
+
+@mixin hideNav(){
+  header {
+    nav {
+      display: none;
+    }
+  }
+}
+
 body {
   background-color: $mat_black;
 }
@@ -77,11 +97,11 @@ nav {
   flex-flow: row wrap;
   justify-content: space-around;
   border-top: $oozora solid 3px;
-
+  border-bottom: 1rem;
   a {
     padding: 0.5vw;
     margin: 0.25vw;
-    font-size: 1.5vw;
+    font-size: 1rem;
 
     em {
       margin-right: 0.5vw;
@@ -109,10 +129,10 @@ nav {
   background-color: black;
   padding: 0.3vw;
   border-radius: 1vw;
-  width: 10.5vw;
+  width: max-content;
 
   img {
-    height: 10vw;
+    height: 10rem;
     border-radius: 1vw 1vw 0 0;
     border: $leaf solid 0.2vw;
   }
@@ -121,11 +141,9 @@ nav {
     display: flex;
     justify-content: space-around;
     margin-top: 0.25vw;
-
     p {
       display: inline;
-      margin-bottom: 0.25vw;
-      font-size: 1.25vw;
+      font-size: 1rem;
     }
   }
 }

@@ -10,7 +10,7 @@ main{
     margin-bottom: 1rem;
     @include base.figureHorizontal();
     img{
-      @include base.pfStyle(10vw)
+      @include base.pfStyle(5rem)
     }
     figcaption{
       margin-left: 2rem;

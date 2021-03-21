@@ -126,22 +126,66 @@ nav a:hover {
     margin: 1rem;
   }
 }
-h2 {
-  text-align: center;
-  margin: 0.5rem;
+main {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+main h2 {
   font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+main .card {
+  background-color: black;
+  padding: 1.5vw;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 2rem;
+}
+main .card img {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 1vw 1vw 0 0;
+  border: #388525 solid 0.5vw;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+main .card figcaption {
+  display: flex;
+  justify-content: space-around;
+  margin-top: revert;
+}
+main .card figcaption p em {
+  margin-right: 0.5rem;
 }
 
-main {
+footer {
+  border-top: #71DB77 solid 3px;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  background-color: #242424;
   display: flex;
   flex-flow: row wrap;
-  flex-basis: 150%;
-  justify-content: space-around;
-  justify-items: center;
-  align-items: center;
+  justify-content: space-evenly;
 }
-main figure {
-  margin: 1vw;
+footer p em {
+  margin-right: 0.5rem;
 }
 
-/*# sourceMappingURL=collection.css.map */
+@media screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=card.css.map */
