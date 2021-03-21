@@ -1,0 +1,29 @@
+@use 'base';
+
+h2{
+  @include base.subStyle(1.5rem);
+}
+
+main{
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  figure{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    img{
+      @include base.pfStyle()
+    }
+    figcaption{
+      margin-left: 2rem;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-evenly;
+      h3{
+        font-size: 1.25rem;
+      }
+    }
+  }
+}

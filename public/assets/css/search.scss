@@ -42,9 +42,7 @@ main{
     flex-flow: row nowrap;
     align-content: center;
     img{
-      width: 7rem;
-      border: base.$leaf solid 0.20rem;
-      border-radius: 10px;
+      @include base.pfStyle();
       margin-right: 2rem;
     }
     figcaption{
