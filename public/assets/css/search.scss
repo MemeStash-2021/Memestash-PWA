@@ -28,9 +28,7 @@ form{
 }
 
 h2{
-  text-align: center;
-  margin: 0.5rem;
-  font-size: 1.5rem;
+  @include base.subStyle(1.5rem)
 }
 main{
   display: flex;

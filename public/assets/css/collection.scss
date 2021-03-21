@@ -1,0 +1,9 @@
+@use 'base';
+
+h2{
+  @include base.subStyle(1.5rem)
+}
+
+main{
+  @include base.cardListing()
+}

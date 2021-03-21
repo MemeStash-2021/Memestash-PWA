@@ -126,48 +126,13 @@ nav a:hover {
     margin: 1rem;
   }
 }
-main .profile-short {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  margin-bottom: 2rem;
-}
-main .profile-short img {
-  width: 7rem;
-  height: 7rem;
-  border: #388525 solid 0.2vw;
-  border-radius: 1vw;
-}
-main .profile-short figcaption {
-  height: 7rem;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-}
-main .profile-short figcaption #nameplate em {
-  display: block;
-  font-family: "Bungee", sans-serif;
-  font-size: 1.5rem;
-  text-align: center;
-  margin-top: 0.25vw;
-}
-main .profile-short figcaption p {
-  font-size: 1rem;
-}
-main .profile-short figcaption p em {
-  margin-right: 0.5vw;
-}
-main article h2 {
+h2 {
   text-align: center;
   margin: 0.5rem;
   font-size: 1.5rem;
 }
-main article p {
-  text-align: center;
-  margin: 0.5rem;
-  font-size: 1.25rem;
-}
-main article div {
+
+main {
   display: flex;
   flex-flow: row wrap;
   flex-basis: 150%;
@@ -175,38 +140,8 @@ main article div {
   justify-items: center;
   align-items: center;
 }
-main article div figure {
+main figure {
   margin: 1vw;
 }
 
-@media screen and (max-width: 600px) {
-  .profile-short {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    margin-bottom: 2vw;
-  }
-  .profile-short img {
-    width: 7rem;
-    border: #388525 solid 3px;
-    border-radius: 1rem;
-  }
-  .profile-short figcaption {
-    height: 7rem;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-  }
-  .profile-short figcaption #nameplate em {
-    display: block;
-    font-family: "Bungee", sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 0.25rem;
-  }
-  .profile-short figcaption p em {
-    margin-right: 0.5rem;
-  }
-}
-
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=collection.css.map */

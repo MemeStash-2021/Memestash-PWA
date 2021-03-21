@@ -37,7 +37,7 @@ nav{
   a {
     padding: 0.5vw;
     margin: 0.25vw;
-    font-size: 2vw;
+    font-size: 1.5vw;
     em{
       margin-right: 0.5vw;
     }
@@ -134,4 +134,22 @@ nav{
     display: inline-block;
     margin: 1rem;
   }
+}
+
+@mixin cardListing() {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 150%;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  figure{
+    margin: 1vw;
+  }
+}
+
+@mixin subStyle($font-size){
+  text-align: center;
+  margin: 0.5rem;
+  font-size: $font-size;
 }

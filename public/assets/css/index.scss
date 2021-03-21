@@ -36,25 +36,13 @@ main{
   }
   article{
     h2{
-      text-align: center;
-      font-size: 1.50rem;
-      margin-bottom: 0.5rem;
+      @include base.subStyle(1.5rem)
     }
     p{
-      text-align: center;
-      margin-bottom: 0.5vw;
-      font-size: 1.25rem;
+      @include base.subStyle(1.25rem)
     }
     div{
-      display: flex;
-      flex-flow: row wrap;
-      flex-basis: 150%;
-      justify-content: space-around;
-      justify-items: center;
-      align-items: center;
-      figure{
-        margin: 1vw;
-      }
+      @include base.cardListing()
     }
   }
 }
