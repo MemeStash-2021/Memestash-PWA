@@ -1,0 +1,71 @@
+@use 'base';
+
+main {
+  @include base.columnListing(2rem);
+
+  .message {
+    @include base.figureHorizontal();
+
+    img {
+      @include base.pfStyle(5rem)
+    }
+
+    figcaption {
+      @include base.figcapListing();
+      margin-left: 0.5rem;
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        @include base.pfStyle(auto);
+        padding: 0.25rem;
+      }
+    }
+
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+footer {
+  border-top: base.$oozora solid 3px;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  background-color: base.$mat_black;
+
+  form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+    a {
+      margin-top: 0.25rem;
+    }
+
+    input[type="text"] {
+      height: 1.25rem;
+      min-width: 60vw;
+      margin-bottom: 0.5rem;
+    }
+
+    input[type="submit"] {
+      display: none;
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    nav {
+      display: none;
+    }
+  }
+}
