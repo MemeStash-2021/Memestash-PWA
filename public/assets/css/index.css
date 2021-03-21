@@ -1,0 +1,152 @@
+body {
+  background-color: #242424;
+}
+
+header, main {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+h1, h2, h3, a, p, em, figcaption {
+  color: white;
+}
+
+a, p, em, figcaption {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-family: "Bungee", sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  border-top: #71DB77 solid 3px;
+  margin-bottom: 1rem;
+}
+nav a {
+  padding: 0.5rem;
+  margin: 0.25rem;
+  font-size: 1.25rem;
+}
+nav a em {
+  margin-right: 0.25rem;
+}
+nav a:hover {
+  background-color: #388525;
+}
+
+.logo {
+  font-family: "Bungee", sans-serif;
+  font-size: 2.5rem;
+  color: black;
+  background-color: #71DB77;
+  padding: 0.75rem;
+  display: inline-block;
+  margin: 1rem;
+}
+
+.card {
+  background-color: black;
+  padding: 0.3rem;
+  border-radius: 10px;
+  width: 7.4rem;
+}
+.card img {
+  height: 7rem;
+  border-radius: 10px 10px 0 0;
+  border: #388525 solid 3px;
+}
+.card figcaption {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0.25rem;
+}
+.card figcaption p {
+  display: inline;
+  margin-bottom: 0.25rem;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    position: fixed;
+    background-color: #242424;
+    bottom: 0;
+    left: 0;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    margin: 0;
+    width: 100%;
+  }
+  nav a {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    font-size: 4vw;
+    margin: 0;
+    padding: 0 0 0 0;
+  }
+  nav a em {
+    width: max-content;
+    margin: 0 0 0.25rem 0;
+  }
+}
+main .profile-short {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+main .profile-short img {
+  width: 7rem;
+  border: #388525 solid 0.2rem;
+  border-radius: 10px;
+}
+main .profile-short figcaption {
+  height: 7rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+main .profile-short figcaption #nameplate em {
+  display: block;
+  font-family: "Bungee", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 0.25rem;
+}
+main .profile-short figcaption p {
+  font-size: 1rem;
+}
+main .profile-short figcaption p em {
+  margin-right: 0.5rem;
+}
+main article h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+main article p {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+main article div {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 150%;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+}
+main article div figure {
+  margin: 1rem;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,111 @@
+$bungee: 'Bungee', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$saria: 'Saira Condensed', sans-serif;
+$mat_black: #242424;
+$lime: #9AE388;
+$oozora: #71DB77;
+$leaf: #388525;
+$atlantis: #51AD80;
+$construction: #EBC14B;
+$flare: #F53333;
+
+body{
+  background-color: $mat_black;
+}
+
+header, main{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+h1,h2, h3, a, p, em, figcaption{
+  color: white;
+}
+
+a, p, em, figcaption{
+  font-family: $roboto;
+}
+
+a{
+   text-decoration: none;
+ }
+
+h1, h2, h3{
+  font-family: $bungee;
+}
+
+nav{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  border-top: $oozora solid 3px;
+  a {
+    padding: 0.5rem;
+    margin: 0.25rem;
+    font-size: 1.25rem;
+    em{
+      margin-right: 0.25rem;
+    }
+  }
+  a:hover{
+    background-color: $leaf;
+  }
+  margin-bottom: 1rem;
+}
+
+.logo{
+  font-family: $bungee;
+  font-size: 2.5rem;
+  color: black;
+  background-color: $oozora;
+  padding: 0.75rem;
+  display: inline-block;
+  margin: 1rem;
+}
+
+.card{
+  background-color: black;
+  padding: 0.3rem;
+  border-radius: 10px;
+  width: 7.4rem;
+  img{
+    height: 7rem;
+    border-radius: 10px 10px 0 0;
+    border: $leaf solid 3px;
+  }
+  figcaption{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.25rem;
+    p{
+      display: inline;
+      margin-bottom: 0.25rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav{
+    position: fixed;
+    background-color: $mat_black;
+    bottom: 0;
+    left: 0;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    margin: 0;
+    width: 100%;
+    a{
+      display: flex;
+      flex-flow: column;
+      align-content: center;
+      justify-content: center;
+      font-size: 4vw;
+      margin: 0;
+      padding: 0 0 0 0;
+      em{
+        width: max-content;
+        margin: 0 0 0.25rem 0;
+      }
+    }
+  }
+}
