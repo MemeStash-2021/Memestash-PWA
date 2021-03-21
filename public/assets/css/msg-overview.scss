@@ -1,20 +1,21 @@
-@use 'base';
+@use 'modules/base';
+@use 'resources/commons';
 
 h2{
-  @include base.subStyle(1.5rem);
+  @include commons.subStyle(1.5rem);
 }
 
 main{
-  @include base.columnListing(2rem);
+  @include commons.columnListing(2rem);
   figure{
     margin-bottom: 1rem;
-    @include base.figureHorizontal();
+    @include commons.figureHorizontal();
     img{
-      @include base.pfStyle(5rem)
+      @include commons.pfStyle(5rem)
     }
     figcaption{
       margin-left: 2rem;
-      @include base.figcapListing();
+      @include commons.figcapListing();
       h3{
         font-size: 1.25rem;
       }

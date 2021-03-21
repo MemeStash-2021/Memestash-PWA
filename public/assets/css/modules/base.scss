@@ -1,79 +1,7 @@
-$bungee: 'Bungee', sans-serif;
-$roboto: 'Roboto', sans-serif;
-$saria: 'Saira Condensed', sans-serif;
-$mat_black: #242424;
-$lime: #9AE388;
-$oozora: #71DB77;
-$leaf: #388525;
-$atlantis: #51AD80;
-$construction: #EBC14B;
-$flare: #F53333;
-
-@mixin cardListing() {
-  display: flex;
-  flex-flow: row wrap;
-  flex-basis: 150%;
-  justify-content: space-around;
-  justify-items: center;
-  align-items: center;
-  figure {
-    margin: 1vw;
-  }
-}
-
-@mixin subStyle($font-size) {
-  text-align: center;
-  margin: 0.5rem;
-  font-size: $font-size;
-}
-
-@mixin pfStyle($dimension) {
-  height: $dimension;
-  width: $dimension;
-  border: $leaf solid 0.20rem;
-  border-radius: 10px;
-}
-
-@mixin columnListing($margin){
-  display: flex;
-  flex-flow: column nowrap;
-  margin-left: $margin;
-  margin-right: $margin;
-}
-
-@mixin figcapListing(){
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-evenly;
-}
-
-@mixin figureHorizontal(){
-  display: flex;
-  flex-flow: row nowrap;
-}
-
-@mixin footerStyle(){
-  border-top: $oozora solid 3px;
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  background-color: $mat_black;
-}
-
-@mixin hideNav(){
-  header {
-    nav {
-      display: none;
-    }
-  }
-}
+@use '../resources/commons';
 
 body {
-  background-color: $mat_black;
+  background-color: commons.$mat_black;
 }
 
 h1, h2, h3, a, p, em, figcaption {
@@ -81,7 +9,7 @@ h1, h2, h3, a, p, em, figcaption {
 }
 
 a, p, em, figcaption, input {
-  font-family: $roboto;
+  font-family: commons.$roboto;
 }
 
 a {
@@ -89,37 +17,34 @@ a {
 }
 
 h1, h2, h3 {
-  font-family: $bungee;
+  font-family: commons.$bungee;
 }
 
 nav {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  border-top: $oozora solid 3px;
+  border-top: commons.$oozora solid 3px;
   border-bottom: 1rem;
   a {
     padding: 0.5vw;
     margin: 0.25vw;
     font-size: 1rem;
-
     em {
       margin-right: 0.5vw;
     }
   }
-
   a:hover {
-    background-color: $leaf;
+    background-color: commons.$leaf;
   }
-
   margin-bottom: 1vw;
 }
 
 .logo {
-  font-family: $bungee;
+  font-family: commons.$bungee;
   font-size: 2.5vw;
   color: black;
-  background-color: $oozora;
+  background-color: commons.$oozora;
   padding: 0.75vw;
   display: inline-block;
   margin: 1vw;
@@ -134,7 +59,7 @@ nav {
   img {
     height: 10rem;
     border-radius: 1vw 1vw 0 0;
-    border: $leaf solid 0.2vw;
+    border: commons.$leaf solid 0.2vw;
   }
 
   figcaption {
@@ -151,7 +76,7 @@ nav {
 @media screen and (max-width: 600px) {
   nav {
     position: fixed;
-    background-color: $mat_black;
+    background-color: commons.$mat_black;
     bottom: 0;
     left: 0;
     padding-top: 0.5vw;
@@ -183,7 +108,7 @@ nav {
     img {
       height: 7rem;
       border-radius: 10px 10px 0 0;
-      border: $leaf solid 3px;
+      border: commons.$leaf solid 3px;
     }
 
     figcaption {
@@ -199,10 +124,10 @@ nav {
     }
   }
   .logo {
-    font-family: $bungee;
+    font-family: commons.$bungee;
     font-size: 2.5rem;
     color: black;
-    background-color: $oozora;
+    background-color: commons.$oozora;
     padding: 0.5rem;
     display: inline-block;
     margin: 1rem;

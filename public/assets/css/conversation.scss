@@ -1,17 +1,18 @@
-@use 'base';
+@use 'modules/base';
+@use 'resources/commons';
 
 main {
-  @include base.columnListing(2rem);
+  @include commons.columnListing(2rem);
 
   .message {
-    @include base.figureHorizontal();
+    @include commons.figureHorizontal();
 
     img {
-      @include base.pfStyle(5rem)
+      @include commons.pfStyle(5rem)
     }
 
     figcaption {
-      @include base.figcapListing();
+      @include commons.figcapListing();
       margin-left: 0.5rem;
 
       h3 {
@@ -19,7 +20,7 @@ main {
       }
 
       p {
-        @include base.pfStyle(auto);
+        @include commons.pfStyle(auto);
         padding: 0.25rem;
       }
     }
@@ -30,7 +31,7 @@ main {
 }
 
 footer {
-  @include base.footerStyle();
+  @include commons.footerStyle();
 
   form {
     display: flex;
@@ -56,5 +57,5 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  @include base.hideNav()
+  @include commons.hideNav()
 }

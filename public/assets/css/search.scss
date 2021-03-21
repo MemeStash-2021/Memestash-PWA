@@ -1,9 +1,10 @@
-@use 'base';
+@use 'modules/base';
+@use 'resources/commons';
 
 form{
   padding: 1.5rem;
   text-align: center;
-  background-color: base.$oozora;
+  background-color: commons.$oozora;
   em{
     display: inline-block;
     color: black;
@@ -28,7 +29,7 @@ form{
 }
 
 h2{
-  @include base.subStyle(1.5rem)
+  @include commons.subStyle(1.5rem)
 }
 main{
   display: flex;
@@ -38,14 +39,14 @@ main{
   margin-left: 2rem;
   margin-right: 2rem;
   figure{
-    @include base.figureHorizontal();
+    @include commons.figureHorizontal();
     align-content: center;
     img{
-      @include base.pfStyle(10vw);
+      @include commons.pfStyle(10vw);
       margin-right: 2rem;
     }
     figcaption{
-      @include base.figcapListing();
+      @include commons.figcapListing();
       h3{
         font-size: 1.25rem;
       }

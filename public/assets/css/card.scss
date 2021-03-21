@@ -1,5 +1,5 @@
-@use 'base';
-
+@use 'modules/base';
+@use 'resources/commons';
 
 main{
   h2{
@@ -22,7 +22,7 @@ main{
       height: 20rem;
       width: 20rem;
       border-radius: 1vw 1vw 0 0;
-      border: base.$leaf solid 0.5vw;
+      border: commons.$leaf solid 0.5vw;
       text-align: center;
       margin-bottom: 1rem;
     }
@@ -44,7 +44,7 @@ main{
 }
 
 footer{
-  @include base.footerStyle();
+  @include commons.footerStyle();
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -56,5 +56,5 @@ footer{
 }
 
 @media screen and (max-width: 600px) {
-  @include base.hideNav()
+  @include commons.hideNav()
 }
