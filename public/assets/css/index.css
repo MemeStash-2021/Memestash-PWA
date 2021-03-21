@@ -145,5 +145,8 @@ main article div {
   justify-items: center;
   align-items: center;
 }
+main article div figure {
+  margin: 1rem;
+}
 
 /*# sourceMappingURL=index.css.map */
