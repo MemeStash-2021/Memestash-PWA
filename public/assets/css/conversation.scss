@@ -1,17 +1,18 @@
-@use 'base';
+@use 'modules/base';
+@use 'resources/commons';
 
 main {
-  @include base.columnListing(2rem);
+  @include commons.columnListing(2rem);
 
   .message {
-    @include base.figureHorizontal();
+    @include commons.figureHorizontal();
 
     img {
-      @include base.pfStyle(5rem)
+      @include commons.pfStyle(5rem)
     }
 
     figcaption {
-      @include base.figcapListing();
+      @include commons.figcapListing();
       margin-left: 0.5rem;
 
       h3 {
@@ -19,7 +20,7 @@ main {
       }
 
       p {
-        @include base.pfStyle(auto);
+        @include commons.pfStyle(auto);
         padding: 0.25rem;
       }
     }
@@ -30,18 +31,11 @@ main {
 }
 
 footer {
-  border-top: base.$oozora solid 3px;
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  background-color: base.$mat_black;
+  @include commons.footerStyle();
 
   form {
     display: flex;
+    //TODO: Change flow direction based on user
     flex-flow: row wrap;
     justify-content: space-evenly;
 
@@ -63,9 +57,5 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  header {
-    nav {
-      display: none;
-    }
-  }
+  @include commons.hideNav()
 }

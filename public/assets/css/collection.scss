@@ -1,9 +1,10 @@
-@use 'base';
+@use 'modules/base';
+@use 'resources/commons';
 
 h2{
-  @include base.subStyle(1.5rem)
+  @include commons.subStyle(1.5rem)
 }
 
 main{
-  @include base.cardListing()
+  @include commons.cardListing()
 }

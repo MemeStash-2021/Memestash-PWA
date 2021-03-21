@@ -1,22 +1,23 @@
-@use 'base';
+@use 'modules/base';
+@use 'resources/commons';
 
 main{
   .profile-short{
-    @include base.figureHorizontal;
+    @include commons.figureHorizontal;
     justify-content: space-around;
     img{
       width: 7rem ;
       height: 7rem;
-      border: base.$leaf solid 0.20vw;
+      border: commons.$leaf solid 0.20vw;
       border-radius: 1vw;
     }
     figcaption{
       height: 7rem;
-      @include base.figcapListing();
+      @include commons.figcapListing();
       #nameplate{
         em{
           display: block;
-          font-family: base.$bungee;
+          font-family: commons.$bungee;
           font-size: 1.5rem;
           text-align: center;
           margin-top: 0.25vw;
@@ -33,13 +34,13 @@ main{
   }
   article{
     h2{
-      @include base.subStyle(1.5rem)
+      @include commons.subStyle(1.5rem)
     }
     p{
-      @include base.subStyle(1.25rem)
+      @include commons.subStyle(1.25rem)
     }
     div{
-      @include base.cardListing()
+      @include commons.cardListing()
     }
   }
 }
@@ -51,7 +52,7 @@ main{
     justify-content: space-around;
     img{
       width: 7rem;
-      border: base.$leaf solid 3px;
+      border: commons.$leaf solid 3px;
       border-radius: 1rem;
     }
     figcaption{
@@ -62,7 +63,7 @@ main{
       #nameplate{
         em{
           display: block;
-          font-family: base.$bungee;
+          font-family: commons.$bungee;
           font-size: 1.5rem;
           text-align: center;
           margin-top: 0.25rem;

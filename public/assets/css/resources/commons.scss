@@ -1,0 +1,73 @@
+$bungee: 'Bungee', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$saria: 'Saira Condensed', sans-serif;
+$mat_black: #242424;
+$lime: #9AE388;
+$oozora: #71DB77;
+$leaf: #388525;
+$atlantis: #51AD80;
+$construction: #EBC14B;
+$flare: #F53333;
+
+@mixin cardListing() {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 150%;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  figure {
+    margin: 1vw;
+  }
+}
+
+@mixin subStyle($font-size) {
+  text-align: center;
+  margin: 0.5rem;
+  font-size: $font-size;
+}
+
+@mixin pfStyle($dimension) {
+  height: $dimension;
+  width: $dimension;
+  border: $leaf solid 0.20rem;
+  border-radius: 10px;
+}
+
+@mixin columnListing($margin){
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: $margin;
+  margin-right: $margin;
+}
+
+@mixin figcapListing(){
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+}
+
+@mixin figureHorizontal(){
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+@mixin footerStyle(){
+  border-top: $oozora solid 3px;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  background-color: $mat_black;
+}
+
+@mixin hideNav(){
+  header {
+    nav {
+      display: none;
+    }
+  }
+}
