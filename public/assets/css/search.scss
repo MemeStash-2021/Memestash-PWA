@@ -16,7 +16,7 @@ form{
   input[type="text"]{
     height: 1.25rem;
     text-align: center;
-    width: 17rem;
+    min-width: 60vw;
   }
   input[type="submit"]{
     text-decoration: none;
@@ -24,5 +24,48 @@ form{
     color: black;
     border: black solid 2px;
     margin: 1rem;
+  }
+}
+
+h2{
+  text-align: center;
+  margin: 0.5rem;
+  font-size: 1.5rem;
+}
+main{
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  justify-content: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  figure{
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    img{
+      width: 7rem;
+      border: base.$leaf solid 0.20rem;
+      border-radius: 10px;
+      margin-right: 2rem;
+    }
+    figcaption{
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-evenly;
+      h3{
+        font-size: 1.25rem;
+      }
+      p{
+        em{
+          margin-right: 0.5rem;
+          margin-left: 1rem;
+        }
+        em:first-of-type{
+          margin-left: 0;
+        }
+      }
+    }
+    margin-bottom: 1rem;
   }
 }
