@@ -25,3 +25,15 @@ main{
     }
   }
 }
+
+footer{
+  @include commons.footerStyle();
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+
+@media screen and (max-width: 600px) {
+  @include commons.hideNav()
+}
