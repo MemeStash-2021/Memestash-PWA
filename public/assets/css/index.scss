@@ -15,6 +15,21 @@ main{
       display: flex;
       flex-flow: column nowrap;
       justify-content: space-around;
+      #nameplate{
+        em{
+          display: block;
+          font-family: base.$bungee;
+          font-size: 1.5rem;
+          text-align: center;
+          margin-top: 0.25rem;
+        }
+      }
+      p{
+        font-size: 1rem;
+        em{
+          margin-right: 0.5rem;
+        }
+      }
     }
     margin-bottom: 2rem;
   }

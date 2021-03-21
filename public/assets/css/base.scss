@@ -18,7 +18,7 @@ header, main{
   margin-right: 1rem;
 }
 
-h1,h2, a, p, em, figcaption{
+h1,h2, h3, a, p, em, figcaption{
   color: white;
 }
 
@@ -30,10 +30,8 @@ a{
    text-decoration: none;
  }
 
-h1, h2{
+h1, h2, h3{
   font-family: $bungee;
-  font-size: 3rem;
-  font-weight: bold;
 }
 
 nav{
