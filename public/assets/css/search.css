@@ -126,87 +126,73 @@ nav a:hover {
     margin: 1rem;
   }
 }
-main .profile-short {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  margin-bottom: 2rem;
+form {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #71DB77;
 }
-main .profile-short img {
-  width: 7rem;
-  height: 7rem;
-  border: #388525 solid 0.2vw;
-  border-radius: 1vw;
+form em {
+  display: inline-block;
+  color: black;
+  font-size: 2rem;
+  margin-right: 1rem;
 }
-main .profile-short figcaption {
-  height: 7rem;
+form input {
+  display: inline;
+}
+form input[type=text] {
+  height: 1.25rem;
+  text-align: center;
+  min-width: 60vw;
+}
+form input[type=submit] {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  border: black solid 2px;
+  margin: 1rem;
+}
+
+h2 {
+  text-align: center;
+  margin: 0.5rem;
+  font-size: 1.5rem;
+}
+
+main {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-around;
+  align-content: center;
+  justify-content: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
-main .profile-short figcaption #nameplate em {
-  display: block;
-  font-family: "Bungee", sans-serif;
-  font-size: 1.5rem;
-  text-align: center;
-  margin-top: 0.25vw;
+main figure {
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  margin-bottom: 1rem;
 }
-main .profile-short figcaption p {
-  font-size: 1rem;
+main figure img {
+  width: 7rem;
+  border: #388525 solid 0.2rem;
+  border-radius: 10px;
+  margin-right: 2rem;
 }
-main .profile-short figcaption p em {
-  margin-right: 0.5vw;
+main figure figcaption {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
 }
-main article h2 {
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-main article p {
-  text-align: center;
-  margin-bottom: 0.5vw;
+main figure figcaption h3 {
   font-size: 1.25rem;
 }
-main article div {
-  display: flex;
-  flex-flow: row wrap;
-  flex-basis: 150%;
-  justify-content: space-around;
-  justify-items: center;
-  align-items: center;
+main figure figcaption p em {
+  margin-right: 0.5rem;
+  margin-left: 1rem;
 }
-main article div figure {
-  margin: 1vw;
+main figure figcaption p em:first-of-type {
+  margin-left: 0;
 }
 
-@media screen and (max-width: 600px) {
-  .profile-short {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    margin-bottom: 2vw;
-  }
-  .profile-short img {
-    width: 7rem;
-    border: #388525 solid 3px;
-    border-radius: 1rem;
-  }
-  .profile-short figcaption {
-    height: 7rem;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-  }
-  .profile-short figcaption #nameplate em {
-    display: block;
-    font-family: "Bungee", sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 0.25rem;
-  }
-  .profile-short figcaption p em {
-    margin-right: 0.5rem;
-  }
-}
-
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=search.css.map */
