@@ -9,46 +9,74 @@ $atlantis: #51AD80;
 $construction: #EBC14B;
 $flare: #F53333;
 
-body{
+@mixin cardListing() {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 150%;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  figure {
+    margin: 1vw;
+  }
+}
+
+@mixin subStyle($font-size) {
+  text-align: center;
+  margin: 0.5rem;
+  font-size: $font-size;
+}
+
+@mixin pfStyle() {
+  height: 10vw;
+  border: $leaf solid 0.20rem;
+  border-radius: 10px;
+}
+
+body {
   background-color: $mat_black;
 }
 
-h1,h2, h3, a, p, em, figcaption{
+h1, h2, h3, a, p, em, figcaption {
   color: white;
 }
 
-a, p, em, figcaption, input{
+a, p, em, figcaption, input {
   font-family: $roboto;
 }
 
-a{
-   text-decoration: none;
- }
+a {
+  text-decoration: none;
+}
 
-h1, h2, h3{
+h1, h2, h3 {
   font-family: $bungee;
 }
 
-nav{
+nav {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   border-top: $oozora solid 3px;
+
   a {
     padding: 0.5vw;
     margin: 0.25vw;
     font-size: 1.5vw;
-    em{
+
+    em {
       margin-right: 0.5vw;
     }
   }
-  a:hover{
+
+  a:hover {
     background-color: $leaf;
   }
+
   margin-bottom: 1vw;
 }
 
-.logo{
+.logo {
   font-family: $bungee;
   font-size: 2.5vw;
   color: black;
@@ -58,21 +86,24 @@ nav{
   margin: 1vw;
 }
 
-.card{
+.card {
   background-color: black;
   padding: 0.3vw;
   border-radius: 1vw;
   width: 10.5vw;
-  img{
+
+  img {
     height: 10vw;
     border-radius: 1vw 1vw 0 0;
     border: $leaf solid 0.2vw;
   }
-  figcaption{
+
+  figcaption {
     display: flex;
     justify-content: space-around;
     margin-top: 0.25vw;
-    p{
+
+    p {
       display: inline;
       margin-bottom: 0.25vw;
       font-size: 1.25vw;
@@ -81,7 +112,7 @@ nav{
 }
 
 @media screen and (max-width: 600px) {
-  nav{
+  nav {
     position: fixed;
     background-color: $mat_black;
     bottom: 0;
@@ -90,7 +121,8 @@ nav{
     padding-bottom: 0.5vw;
     margin: 0;
     width: 100%;
-    a{
+
+    a {
       display: flex;
       flex-flow: column;
       align-content: center;
@@ -98,34 +130,38 @@ nav{
       font-size: 4vw;
       margin: 0;
       padding: 0 0 0 0;
-      em{
+
+      em {
         width: max-content;
         margin: 0 0 0.5vw 0;
       }
     }
   }
-  .card{
+  .card {
     background-color: black;
     padding: 0.3rem;
     border-radius: 10px;
     width: 7.5rem;
-    img{
+
+    img {
       height: 7rem;
       border-radius: 10px 10px 0 0;
       border: $leaf solid 3px;
     }
-    figcaption{
+
+    figcaption {
       display: flex;
       justify-content: space-around;
       margin-top: 0.25rem;
-      p{
+
+      p {
         display: inline;
         margin-bottom: 0.25rem;
         font-size: 1.25rem;
       }
     }
   }
-  .logo{
+  .logo {
     font-family: $bungee;
     font-size: 2.5rem;
     color: black;
@@ -134,22 +170,4 @@ nav{
     display: inline-block;
     margin: 1rem;
   }
-}
-
-@mixin cardListing() {
-  display: flex;
-  flex-flow: row wrap;
-  flex-basis: 150%;
-  justify-content: space-around;
-  justify-items: center;
-  align-items: center;
-  figure{
-    margin: 1vw;
-  }
-}
-
-@mixin subStyle($font-size){
-  text-align: center;
-  margin: 0.5rem;
-  font-size: $font-size;
 }
