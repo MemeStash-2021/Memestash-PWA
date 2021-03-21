@@ -62,3 +62,24 @@ nav{
   display: inline-block;
   margin: 1rem;
 }
+
+.card{
+  background-color: black;
+  padding: 0.3rem;
+  border-radius: 10px;
+  width: 7.4rem;
+  img{
+    height: 7rem;
+    border-radius: 10px 10px 0 0;
+    border: $leaf solid 3px;
+  }
+  figcaption{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.25rem;
+    p{
+      display: inline;
+      margin-bottom: 0.25rem;
+    }
+  }
+}

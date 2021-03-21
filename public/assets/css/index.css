@@ -52,6 +52,27 @@ nav a:hover {
   margin: 1rem;
 }
 
+.card {
+  background-color: black;
+  padding: 0.3rem;
+  border-radius: 10px;
+  width: 7.4rem;
+}
+.card img {
+  height: 7rem;
+  border-radius: 10px 10px 0 0;
+  border: #388525 solid 3px;
+}
+.card figcaption {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0.25rem;
+}
+.card figcaption p {
+  display: inline;
+  margin-bottom: 0.25rem;
+}
+
 main .profile-short {
   display: flex;
   flex-flow: row nowrap;
@@ -59,12 +80,12 @@ main .profile-short {
   margin-bottom: 2rem;
 }
 main .profile-short img {
-  width: 12vw;
+  width: 7rem;
   border: #388525 solid 0.2rem;
   border-radius: 10px;
 }
 main .profile-short figcaption {
-  height: 12vw;
+  height: 7rem;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
@@ -81,6 +102,23 @@ main .profile-short figcaption p {
 }
 main .profile-short figcaption p em {
   margin-right: 0.5rem;
+}
+main article h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+main article p {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+main article div {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 150%;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=index.css.map */
