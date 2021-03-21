@@ -46,15 +46,7 @@ main{
       font-size: 1.25rem;
     }
     div{
-      display: flex;
-      flex-flow: row wrap;
-      flex-basis: 150%;
-      justify-content: space-around;
-      justify-items: center;
-      align-items: center;
-      figure{
-        margin: 1vw;
-      }
+      @include base.cardListing()
     }
   }
 }
