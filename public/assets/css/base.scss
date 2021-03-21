@@ -1,0 +1,47 @@
+$bungee: 'Bungee', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$saria: 'Saira Condensed', sans-serif;
+$mat_black: #242424;
+$lime: #9AE388;
+$oozora: #71DB77;
+$leaf: #388525;
+$atlantis: #51AD80;
+$construction: #EBC14B;
+$flare: #F53333;
+
+body{
+  background-color: $mat_black;
+}
+
+header, main{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+h1,h2, a, p, em, figcaption{
+  color: white;
+}
+
+a, p, em, figcaption{
+  font-family: $roboto;
+}
+
+a{
+   text-decoration: none;
+ }
+
+h1, h2{
+  font-family: $bungee;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+nav{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  border-top: $oozora solid 3px;
+  a {
+    padding: 0.5rem;
+  }
+}
