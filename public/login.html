@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Bo Robbrecht" />
+    <meta name="author" content="Bo Robbrecht"/>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/login.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,6 +12,23 @@
     <title>MemeStash</title>
 </head>
 <body>
-
+<header>
+    <h1 class="logo">MemeStash</h1>
+</header>
+<main>
+    <form action="index.html" method="post">
+        <label for="username">
+            <input type="text" name="username" id="username">
+        </label>
+        <label for="password">
+            <input type="password" name="password" id="password">
+        </label>
+        <div>
+            <input type="submit" value="Sign in">
+            <a href="#">Not yet registered</a>
+        </div>
+    </form>
+    <a href="#">Forgotten your password?</a>
+</main>
 </body>
 </html>

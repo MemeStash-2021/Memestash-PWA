@@ -126,5 +126,21 @@ nav a:hover {
     margin: 1rem;
   }
 }
+body {
+  margin-right: auto;
+  margin-left: auto;
+}
+body header {
+  margin-top: 2rem;
+  border-bottom: #71DB77 solid 3px;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+body header .logo {
+  font-size: 4rem;
+}
 
 /*# sourceMappingURL=login.css.map */

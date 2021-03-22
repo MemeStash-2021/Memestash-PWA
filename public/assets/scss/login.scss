@@ -1,1 +1,19 @@
 @use 'modules/base';
+@use 'resources/commons';
+
+body{
+  margin-right: auto;
+  margin-left: auto;
+  header{
+    margin-top: 2rem;
+    border-bottom: commons.$oozora solid 3px;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    .logo{
+      font-size: 4rem;
+    }
+  }
+}
