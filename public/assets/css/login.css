@@ -192,5 +192,11 @@ body main .hover:hover::after {
   opacity: 1;
   transform: translateY(0);
 }
+body main h2 {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1rem;
+}
 
 /*# sourceMappingURL=login.css.map */

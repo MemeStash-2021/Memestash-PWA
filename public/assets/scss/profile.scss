@@ -1,32 +1,36 @@
 @use 'modules/base';
 @use 'resources/commons';
 
-main{
-  .user{
+main {
+  .user {
     margin-top: 1rem;
     @include commons.figureHorizontal();
     justify-content: space-around;
-    img{
-      width: 7rem ;
+
+    img {
+      width: 7rem;
       height: 7rem;
       border: commons.$leaf solid 0.20vw;
       border-radius: 1vw;
     }
-    figcaption{
+
+    figcaption {
       @include commons.figcapListing();
     }
   }
-  h1{
-    @include commons.subStyle(1.5rem)
-  }
-  article{
-    div{
+
+  article {
+    h2 {
+      @include commons.subStyle(1.5rem)
+    }
+
+    div {
       @include commons.cardListing()
     }
   }
 }
 
-footer{
+footer {
   @include commons.footerStyle();
   display: flex;
   flex-flow: row nowrap;
