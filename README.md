@@ -7,7 +7,9 @@ Welcome to the MemeStash PWA Repo. This PWA is to be used with one of the 2 back
 ## Setup
 **W.I.P.**
 
-## Screen
+## App
+All the files of the PWA are located in `/public` directory
+### Screens
 |Screen|HTML?|CSS?|
 |---|---|---|
 |Home *(Index)*|`index.html`|`index.scss`|
@@ -16,10 +18,10 @@ Welcome to the MemeStash PWA Repo. This PWA is to be used with one of the 2 back
 |Message Overview|`msg-overview.html`|`msg-overview.scss`|
 |Message Conversation|`conversation.html`|`conversation.scss`|
 |Card Overview|`card.html`|`card.scss`|
-|Login|❌|❌|❌|
-|Register|❌|❌|❌|
+|Login|`login.html`|`login.scss`|
+|Register|❌|❌|
 
-## Functionalities
+### Functionalities
 **N/A**
 
 ## Directory structure
@@ -53,6 +55,7 @@ Welcome to the MemeStash PWA Repo. This PWA is to be used with one of the 2 back
 │   │       ├── index.scss
 │   │       ├── msg-overview.scss
 │   │       ├── profile.scss
+│   │       ├── login.scss
 │   │       └── search.scss
 │   ├── images -> Contains large images & video's
 │   ├── card.html
@@ -61,6 +64,7 @@ Welcome to the MemeStash PWA Repo. This PWA is to be used with one of the 2 back
 │   ├── index.html
 │   ├── msg-overview.html
 │   ├── profile.html
+│   ├── login.html
 │   └── search.html
 └── README.md
 ```
