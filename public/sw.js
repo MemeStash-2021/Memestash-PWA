@@ -1,6 +1,7 @@
 "use strict";
 const CACHE_NAME = "MemeDex-V1"
 const CACHE_URLS = [
+    "/",
     "index.html",
     "collection.html",
     "card.html",
