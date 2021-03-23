@@ -10,6 +10,8 @@ const CACHE_URLS = [
     "assets/css/card.css",
     "assets/css/reset.css",
     "assets/js/util/swUtil.js",
+    "assets/js/util/offUtil.js",
+    "sw.js",
     "manifest.json",
     "favicon.png"
 ]
