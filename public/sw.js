@@ -6,7 +6,10 @@ const CACHE_URLS = [
     "card.html",
     "assets/css/index.css",
     "assets/css/collection.css",
-    "assets/css/card.css"
+    "assets/css/card.css",
+    "assets/css/reset.css",
+    "assets/js/util/swUtil.js",
+    "manifest.json"
 ]
 
 self.addEventListener("install", function (e) {
@@ -19,7 +22,10 @@ self.addEventListener("install", function (e) {
 
 self.addEventListener("fetch", function (e) {
     e.respondWith(fetch(e.request)
-        .catch(() => caches.open(CACHE_NAME).then(cache => {
-            return cache.match(e.request);
-        })));
+        .catch(f => {
+            return caches.open(CACHE_NAME).then(cache => {
+                return cache.match(e.request);
+            })
+        })
+    );
 });
