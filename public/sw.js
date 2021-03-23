@@ -10,7 +10,8 @@ const CACHE_URLS = [
     "assets/css/card.css",
     "assets/css/reset.css",
     "assets/js/util/swUtil.js",
-    "manifest.json"
+    "manifest.json",
+    "favicon.png"
 ]
 
 self.addEventListener("install", function (e) {
