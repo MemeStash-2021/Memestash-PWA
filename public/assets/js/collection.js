@@ -1,5 +1,4 @@
 import {get} from "./config/config.js";
-
 "use strict";
 
 document.addEventListener("DOMContentLoaded", scriptLoader);
