@@ -1,6 +1,6 @@
 "use strict";
 import {get, lfConig} from "./config/config.js";
-
+import {formatNumbers} from "./util/formatter.js"
 
 document.addEventListener("DOMContentLoaded", scriptLoader);
 
@@ -34,15 +34,4 @@ function displayCards(data) {
 function storeCards(data) {
     localforage.config(lfConig)
     localforage.setItem("cards", data)
-}
-
-function formatNumbers(number) {
-    let val = ('' + number).length
-    if (3 < val && val <= 6) {
-        return `${Math.floor(number / 1000)}K`;
-    }
-    if (6 < val && val <= 9) {
-        return `${Math.floor(number / 10000)}M`;
-    }
-    return number.toString()
 }
