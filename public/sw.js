@@ -11,6 +11,7 @@ const CACHE_URLS = [
     "assets/css/reset.css",
     "assets/js/util/swUtil.js",
     "assets/js/util/offUtil.js",
+    "assets/js/lib/localforage.min.js",
     "sw.js",
     "manifest.json",
     "favicon.png"
