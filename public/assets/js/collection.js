@@ -1,14 +1,19 @@
 "use strict";
-import {get, lfConig} from "./config/config.js";
-
+import { get, lfConig } from "./config/config.js";
 
 document.addEventListener("DOMContentLoaded", scriptLoader);
 
 function scriptLoader() {
-    fetchCards().then((result) => {
-        displayCards(result)
-        storeCards(result)
-    })
+    if (!navigator.onLine) {
+        let cards = localStorage.getItem('cards')
+        displayCards(cards)
+        storeCards(cards)
+    } else {
+        fetchCards().then((result) => {
+            displayCards(result)
+            storeCards(result)
+        })
+    }
 }
 
 async function fetchCards() {
@@ -20,14 +25,14 @@ async function fetchCards() {
 
 function displayCards(data) {
     data.cards.forEach(card => {
-            document.querySelector("main").innerHTML +=
-                `<figure class="card">
+        document.querySelector("main").innerHTML +=
+            `<figure class="card">
             <img src="${card.image}" alt="${card.name} image">
             <figcaption>
                 <p><em class="fas fa-eye"></em>${formatNumbers(card.views)}</p>
                 <p><em class="fas fa-heart"></em>${formatNumbers(card.likes)}</p>
             </figcaption>`
-        }
+    }
     )
 }
 
