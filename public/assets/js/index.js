@@ -1,6 +1,7 @@
 "use strict";
 import { get } from "./config/config.js";
 import { constructCard } from "./util/wrappers.js";
+import { redirectCard } from "./util/clickable.js";
 
 
 document.addEventListener("DOMContentLoaded", scriptLoader);
@@ -22,5 +23,5 @@ function displayProfile(profile) {
     profile.cards.forEach(card => {
         document.querySelector("main article div").innerHTML += constructCard(card)
     });
-    
+    document.querySelectorAll(".card").forEach(card => card.addEventListener("click", redirectCard))
 }
