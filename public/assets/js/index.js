@@ -1,6 +1,6 @@
 "use strict";
 import { get } from "./config/config.js";
-import { formatNumbers } from "./util/formatter.js"
+import { constructCard } from "./util/wrappers.js";
 
 
 document.addEventListener("DOMContentLoaded", scriptLoader);
@@ -20,13 +20,7 @@ function displayProfile(profile) {
     document.querySelector("#nameplate em").innerHTML = profile.name
     document.querySelector("#balance").innerHTML = `<em class="fas fa-coins"></em>${profile.wallet}`
     profile.cards.forEach(card => {
-        document.querySelector("main article div").innerHTML +=
-            `<figure class="card">
-            <img src="${card.image}" alt="${card.name} image">
-            <figcaption>
-                <p><em class="fas fa-eye"></em>${formatNumbers(card.views)}</p>
-                <p><em class="fas fa-heart"></em>${formatNumbers(card.likes)}</p>
-            </figcaption>`
+        document.querySelector("main article div").innerHTML += constructCard(card)
     });
     
 }

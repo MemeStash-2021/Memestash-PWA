@@ -1,6 +1,6 @@
 "use strict";
 import {get, lfConig} from "./config/config.js";
-import {formatNumbers} from "./util/formatter.js"
+import { constructCard } from "./util/wrappers.js"
 
 document.addEventListener("DOMContentLoaded", scriptLoader);
 
@@ -20,13 +20,7 @@ async function fetchCards() {
 
 function displayCards(data) {
     data.cards.forEach(card => {
-            document.querySelector("main").innerHTML +=
-                `<figure class="card">
-            <img src="${card.image}" alt="${card.name} image">
-            <figcaption>
-                <p><em class="fas fa-eye"></em>${formatNumbers(card.views)}</p>
-                <p><em class="fas fa-heart"></em>${formatNumbers(card.likes)}</p>
-            </figcaption>`
+            document.querySelector("main").innerHTML += constructCard(card)
         }
     )
 }
