@@ -25,7 +25,7 @@ function displayCards(data) {
 
 async function fetchCards() {
     const userId = (localStorage.getItem("userId") === null) ? 1 : localStorage.getItem("userId")
-    return await get(`/users/${userId}/cards`).then((result) => {
+    return get(`/users/${userId}/cards`).then((result) => {
         return result
     })
 }
