@@ -24,8 +24,8 @@ function displayCards(data) {
                 `<figure class="card">
             <img src="${card.image}" alt="${card.name} image">
             <figcaption>
-                <p><em class="fas fa-eye"></em>22K</p>
-                <p><em class="fas fa-heart"></em>10K</p>
+                <p><em class="fas fa-eye"></em>${formatNumbers(card.views)}</p>
+                <p><em class="fas fa-heart"></em>${formatNumbers(card.likes)}</p>
             </figcaption>`
         }
     )
@@ -34,4 +34,15 @@ function displayCards(data) {
 function storeCards(data) {
     localforage.config(lfConig)
     localforage.setItem("cards", data)
+}
+
+function formatNumbers(number) {
+    let val = ('' + number).length
+    if (3 < val && val <= 6) {
+        return `${Math.floor(number / 1000)}K`;
+    }
+    if (6 < val && val <= 9) {
+        return `${Math.floor(number / 10000)}M`;
+    }
+    return number.toString()
 }
