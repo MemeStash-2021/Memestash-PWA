@@ -1,8 +1,4 @@
 "use strict";
-import { get } from "./config/config.js";
-import { constructCard } from "./util/wrappers.js";
-import { redirectCard } from "./util/clickable.js";
-
 
 document.addEventListener("DOMContentLoaded", scriptLoader);
 

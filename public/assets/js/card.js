@@ -1,7 +1,4 @@
 "use strict";
-import {get} from "./config/config.js";
-import { constructCard } from "./util/wrappers.js"
-
 document.addEventListener("DOMContentLoaded", scriptLoader);
 
 function scriptLoader() {

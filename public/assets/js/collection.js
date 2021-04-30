@@ -1,15 +1,20 @@
 "use strict";
-import {get, lfConig} from "./config/config.js";
-import {constructCard} from "./util/wrappers.js"
-import {redirectCard} from "./util/clickable.js";
 
 document.addEventListener("DOMContentLoaded", scriptLoader);
 
 function scriptLoader() {
-    fetchCards().then((result) => {
-        displayCards(result)
-        storeCards(result)
-    })
+    if (!navigator.onLine) {
+        localforage.config(lfConig)
+        localforage.getItem('cards').then((cards) => {
+            displayCards(cards)
+            storeCards(cards)
+        })
+    } else {
+        fetchCards().then((result) => {
+            displayCards(result)
+            storeCards(result)
+        })
+    }
 }
 
 async function fetchCards() {
