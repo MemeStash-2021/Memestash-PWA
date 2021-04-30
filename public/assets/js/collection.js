@@ -1,13 +1,14 @@
 "use strict";
-import { get, lfConig } from "./config/config.js";
 
 document.addEventListener("DOMContentLoaded", scriptLoader);
 
 function scriptLoader() {
     if (!navigator.onLine) {
-        let cards = localStorage.getItem('cards')
-        displayCards(cards)
-        storeCards(cards)
+        localforage.config(lfConig)
+        localforage.getItem('cards').then((cards) => {
+            displayCards(cards)
+            storeCards(cards)
+        })
     } else {
         fetchCards().then((result) => {
             displayCards(result)
