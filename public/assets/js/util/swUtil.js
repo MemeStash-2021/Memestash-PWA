@@ -9,3 +9,20 @@ if ('serviceWorker' in navigator) {
         });
     });
 }
+
+
+navigator.serviceWorker.ready.then(() =>
+    document.querySelector(".fa-bell").addEventListener("click", requestNotifications)
+)
+
+function requestNotifications() {
+    Notification.requestPermission().then(permission => {
+        if (permission === "granted") {
+            console.log("Granted")
+        } else if (permission == "denied") {
+            console.log("Denied")
+        } else if (permission == "default") {
+            console.log("default")
+        }
+    })
+}
