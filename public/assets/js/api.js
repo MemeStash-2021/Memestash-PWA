@@ -13,5 +13,7 @@ async function put(uri, body = null) {
         headers: {
             'Content-Type': 'application/json'
         }
+    }).then((response) => {
+        return response.json()
     })
 }

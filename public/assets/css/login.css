@@ -83,6 +83,16 @@ nav a:hover {
   margin: 0 1vw 1vw;
 }
 
+.popup {
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: gray;
+}
+.popup h2, .popup h3, .popup h4 {
+  margin-bottom: 1rem;
+}
+
 @media screen and (max-width: 600px) {
   nav {
     position: fixed;

@@ -87,6 +87,16 @@ nav {
   }
 }
 
+.popup{
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: gray;
+  h2, h3, h4{
+    margin-bottom: 1rem;
+  }
+}
+
 
 @media screen and (max-width: 600px) {
   nav {
