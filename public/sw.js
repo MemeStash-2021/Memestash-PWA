@@ -40,3 +40,8 @@ self.addEventListener("fetch", function (e) {
         })
     );
 });
+
+self.addEventListener("push", e => {
+    let msg = e.data.text();
+    self.ServiceWorkerRegistration.showNotification(msg);
+})

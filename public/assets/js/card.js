@@ -1,6 +1,6 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", scriptLoader);
-const userId = localStorage.getItem("userId")
+const userId = (localStorage.getItem("userId") == null) ? 1 : localStorage.getItem("userId")
 let cardId
 
 function scriptLoader() {
