@@ -22,7 +22,11 @@ All the files of the PWA are located in `/public` directory
 |Register|❌|❌|
 
 ### Functionalities
-**N/A**
+- Able to load user information on the home page
+- Able to see the collection of a user
+- Able to load the app offline
+- Able to see the user's collection of cards, even when offline
+- Able to inspect a card's details
 
 ## Directory structure
 ```
