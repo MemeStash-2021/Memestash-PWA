@@ -69,11 +69,11 @@ nav a:hover {
   font-size: 1rem;
 }
 
-.error {
+.offline {
   display: inline;
   margin-left: 0.5vw;
 }
-.error .error-code {
+.offline .error-code {
   font-family: "Bungee", sans-serif;
   font-size: 1.25rem;
   color: white;
@@ -81,6 +81,16 @@ nav a:hover {
   padding: 0.75vw;
   display: inline-block;
   margin: 0 1vw 1vw;
+}
+
+.error {
+  margin: 2rem;
+  padding: 1rem;
+  background-color: #F53333;
+  border-radius: 10px;
+}
+.error h2, .error h3, .error h4 {
+  margin-bottom: 1rem;
 }
 
 .popup {

@@ -73,7 +73,7 @@ nav {
   }
 }
 
-.error{
+.offline{
   display: inline;
   margin-left: 0.5vw;
   .error-code{
@@ -84,6 +84,16 @@ nav {
     padding: 0.75vw;
     display: inline-block;
     margin: 0 1vw 1vw;
+  }
+}
+
+.error{
+  margin: 2rem;
+  padding: 1rem;
+  background-color: commons.$flare;
+  border-radius: 10px;
+  h2, h3, h4{
+    margin-bottom: 1rem;
   }
 }
 
