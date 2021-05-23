@@ -5,7 +5,7 @@
 Welcome to the MemeStash PWA Repo. This PWA is to be used with one of the 2 back-ends of the Memestash project.
 
 ## Setup
-**W.I.P.**
+1. In `public/assets/js/config/config.js`, define the API URL that you want to use in the `apiURL`
 
 ## App
 All the files of the PWA are located in `/public` directory
@@ -27,6 +27,8 @@ All the files of the PWA are located in `/public` directory
 - Able to load the app offline
 - Able to see the user's collection of cards, even when offline
 - Able to inspect a card's details
+- Able to buy a card
+- Able to receive notifications about newly recieved cards 
 
 ## Directory structure
 ```
