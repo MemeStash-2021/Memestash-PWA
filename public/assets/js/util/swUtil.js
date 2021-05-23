@@ -13,9 +13,14 @@ if ('serviceWorker' in navigator) {
 }
 
 
-navigator.serviceWorker.ready.then(() =>
-    document.querySelector(".fa-bell").addEventListener("click", requestNotifications)
-)
+navigator.serviceWorker.ready.then(() => {
+    try {
+        document.querySelector(".fa-bell").addEventListener("click", requestNotifications)
+    }
+    catch {
+        console.log("This page doesn't have a button to activate notifications.")
+    }
+})
 
 function requestNotifications() {
     Notification.requestPermission().then(permission => {
@@ -40,7 +45,7 @@ function requestNotifications() {
                     .then(response => {
                         document.querySelector(".popup").style.display = "block"
                         document.querySelector(".popup").innerHTML = `<p>Notifications are enabled!</p>`
-                        setTimeout(() => document.querySelector(".popup").style.display = "none")
+                        setTimeout(() => document.querySelector(".popup").style.display = "none", 5000)
                     })
                     .catch(err => console.error("Unable to active the notifications."))
             })

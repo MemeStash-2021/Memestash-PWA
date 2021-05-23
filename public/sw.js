@@ -42,6 +42,8 @@ self.addEventListener("fetch", function (e) {
 });
 
 self.addEventListener("push", e => {
-    let msg = e.data.text();
-    self.ServiceWorkerRegistration.showNotification(msg);
+    const data = e.data.json();
+    const title = data.msg;
+    const text = `You (${data.user.username}) have just received a new "${data.card.name}" card!`
+    self.registration.showNotification(title, {body: text, icon: "/assets/icons/icons-192x192.png"})
 })

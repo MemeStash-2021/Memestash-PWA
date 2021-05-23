@@ -6,7 +6,7 @@ async function get(uri) {
             if (!response.ok) {
                 reject(HTTPError(response))
             }
-            resolve(response.json())
+            resolve(response.json().catch(() => { return response }))
         })
     })
 }
@@ -23,7 +23,7 @@ async function put(uri, body = null) {
             if (!response.ok) {
                 reject(HTTPError(response))
             }
-            resolve(response.json())
+            resolve(response.json().catch(() => { return response }))
         })
     }))
 }
@@ -40,7 +40,7 @@ async function post(uri, body = null) {
             if (!response.ok) {
                 reject(HTTPError(response))
             }
-            resolve(response.json())
+            resolve(response.json().catch(() => { return response }))
         })
     }))
 }
