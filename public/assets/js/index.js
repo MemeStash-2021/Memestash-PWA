@@ -6,6 +6,7 @@ function scriptLoader() {
     fetchProfile().then(result => {
         displayProfile(result)
     })
+    document.querySelector(".popup").style.display = "none"
 }
 
 async function fetchProfile() {

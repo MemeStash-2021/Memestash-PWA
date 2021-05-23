@@ -6,7 +6,7 @@ async function get(uri) {
             if (!response.ok) {
                 reject(HTTPError(response))
             }
-            resolve(response.json())
+            resolve(response.json().catch(() => { return response }))
         })
     })
 }
@@ -23,7 +23,24 @@ async function put(uri, body = null) {
             if (!response.ok) {
                 reject(HTTPError(response))
             }
-            resolve(response.json())
+            resolve(response.json().catch(() => { return response }))
+        })
+    }))
+}
+
+async function post(uri, body = null) {
+    return new Promise(((resolve, reject) => {
+        fetch(`${apiURL}${uri}`, {
+            method: "POST",
+            body: (body == null) ? null : body,
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then((response) => {
+            if (!response.ok) {
+                reject(HTTPError(response))
+            }
+            resolve(response.json().catch(() => { return response }))
         })
     }))
 }

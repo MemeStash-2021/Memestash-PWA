@@ -20,6 +20,20 @@ h1, h2, h3 {
   font-family: commons.$bungee;
 }
 
+header{
+  .notification-bar{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+    em{
+      color: white;
+      font-size: 2.5rem;
+      margin: 1.75rem;
+    }
+  }
+}
+
 nav {
   display: flex;
   flex-flow: row wrap;
