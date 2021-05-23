@@ -5,8 +5,13 @@
 Welcome to the MemeStash PWA Repo. This PWA is to be used with one of the 2 back-ends of the Memestash project.
 
 ## Setup
+### Local
 1. In `public/assets/js/config/config.js`, define the API URL that you want to use in the `apiURL`
-
+### Firebase
+You can also access the app online at [Firebase](https://memestash-pwa.web.app/search.html). Note that this uses the 
+Laravel back-end, which doesn't haven't support for Push notifications
+> It could be that the dynamic resources are immediately shown. This is because the back-end is asleep and needs time to be 
+> reactivated.
 ## App
 All the files of the PWA are located in `/public` directory
 ### Screens
@@ -28,7 +33,8 @@ All the files of the PWA are located in `/public` directory
 - Able to see the user's collection of cards, even when offline
 - Able to inspect a card's details
 - Able to buy a card
-- Able to receive notifications about newly recieved cards 
+- Able to receive notifications about newly received cards *(Only when using the 
+  [NodeJS](https://git.ti.howest.be/TI/2020-2021/s4/web-and-mobile-technology/students/bo-robbrecht/memestash/nodejs) Backend)*
 
 ## Directory structure
 ```
