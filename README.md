@@ -30,6 +30,8 @@ All the files of the PWA are located in `/public` directory
 - Able to load user information on the home page
 - Able to see the collection of a user
 - Able to load the app offline
+- Able to show the user's card offline
+- Abme to show the user's profile offline
 - Able to see the user's collection of cards, even when offline
 - Able to inspect a card's details
 - Able to buy a card
