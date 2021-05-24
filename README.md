@@ -4,6 +4,12 @@
 
 Welcome to the MemeStash PWA Repo. This PWA is to be used with one of the 2 back-ends of the Memestash project.
 
+## Video
+Here you can watch the video about the project:
+
+[![Memestash Presentation Video](http://img.youtube.com/vi/y0Q6Cn6_y0s/0.jpg)](http://www.youtube.com/watch?v=y0Q6Cn6_y0s "Memestash Presentation Video")
+
+*If the embedded video player doesn't work, you can still visit the video with this [link](https://youtu.be/y0Q6Cn6_y0s)*
 ## Setup
 ### Local
 1. In `public/assets/js/config/config.js`, define the API URL that you want to use in the `apiURL`
