@@ -15,5 +15,5 @@ function blockNonCachedPages() {
 }
 
 function displayWaring() {
-    document.querySelector('.error').innerHTML = `<p class="error-code">Offline Edition</p>`
+    document.querySelector('.offline').innerHTML = `<p class="error-code">Offline Edition</p>`
 }

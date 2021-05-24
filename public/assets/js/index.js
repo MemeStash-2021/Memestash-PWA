@@ -3,9 +3,19 @@
 document.addEventListener("DOMContentLoaded", scriptLoader);
 
 function scriptLoader() {
-    fetchProfile().then(result => {
-        displayProfile(result)
-    })
+    if (!navigator.onLine) {
+        localforage.config(lfConig)
+        localforage.getItem('profile').then((profile) => {
+            displayProfile(profile)
+        })
+    }
+    else {
+        fetchProfile()
+            .then(result => {
+                storeProfile(result)
+                displayProfile(result)
+            })
+    }
     document.querySelector(".popup").style.display = "none"
 }
 
@@ -21,4 +31,9 @@ function displayProfile(profile) {
         document.querySelector("main article div").innerHTML += constructCard(card)
     });
     document.querySelectorAll(".card").forEach(card => card.addEventListener("click", redirectCard))
+}
+
+function storeProfile(data) {
+    localforage.config(lfConig)
+    localforage.setItem("profile", data)
 }
