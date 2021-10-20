@@ -15,7 +15,7 @@ Welcome to the MemeStash PWA Repo. This PWA is to be used with one of the 2 back
 ### Firebase
 You can also access the app online at [Firebase](https://memestash-pwa.web.app/search.html). Note that this uses the 
 Laravel back-end, which doesn't haven't support for Push notifications
-> It could be that the dynamic resources are immediately shown. This is because the back-end is asleep and needs time to be 
+> It could be that the dynamic resources aren't immediately shown. This is because the back-end is asleep and needs time to be 
 > reactivated.
 ## App
 All the files of the PWA are located in `/public` directory
